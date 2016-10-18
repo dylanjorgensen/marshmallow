@@ -1,0 +1,48 @@
+The idea here is to install multiple ipython kernels. Here are instructions for anaconda.
+
+configure the python2.7 environment:
+
+conda create -n py27 python=2.7
+source activate py27
+conda install notebook ipykernel
+ipython kernel install --user
+configure the python3.5 environment:
+
+conda create -n py35 python=3.5
+source activate py35
+conda install notebook ipykernel
+ipython kernel install --user
+
+
+
+
+
+
+# keyboard shortcuts
+https://sowingseasons.com/blog/reference/2016/01/jupyter-keyboard-shortcuts/23298516
+
+Shift-Enter: run cell
+Ctrl-Enter: run cell in-place
+Alt-Enter: run cell, insert below
+
+
+
+
+
+
+
+# magic commands
+https://ipython.org/ipython-doc/3/interactive/magics.html
+
+%matplotlib inline
+
+https://blog.dominodatalab.com/lesser-known-ways-of-using-notebooks/
+
+
+
+
+
+# Terminal Commands
+
+# Starting a notebook server
+jupyter notebook

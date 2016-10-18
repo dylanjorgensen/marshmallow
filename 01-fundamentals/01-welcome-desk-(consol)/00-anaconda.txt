@@ -1,0 +1,75 @@
+# Online docs
+
+http://conda.pydata.org/docs/py2or3.html
+
+
+
+
+###### Environments ######
+
+# List environments (And verify current)
+conda env list #current environment highlighted with an ‘*’ character.
+
+# Change environments
+source activate py27
+
+# check current version of Python
+python --version
+
+
+
+
+
+# Create a Python 2.7 environment
+conda create -n py27 python=2.7 anaconda
+
+# Create a Python 3.5 environment
+conda create -n py35 python=3.5 anaconda
+
+# Remove environments
+conda remove --name whatever --all
+
+
+
+###### Python Versions ######
+
+# Check to see which versions of Python are available to install
+conda search python
+
+# check current version of Python
+python --version
+
+# Upgrade Python to another branch
+conda install python=3.5
+
+# Upgrade current branch
+conda update python
+
+
+
+
+# Use a different version
+source activate 9.9whatever
+
+
+
+
+
+###### Packages ######
+
+# List packages
+conda list
+
+# Install packages
+conda install pydot
+
+# View dependecnys
+conda info pydot
+
+# Update packages
+conda search --outdated # Shows all outdated
+conda update --all # Updates all packages
+
+
+
+
